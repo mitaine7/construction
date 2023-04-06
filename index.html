@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page avec image en plein écran</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  .background-image {
+	background-image: url('https://source.unsplash.com/random/1920x1080');
+	background-size: cover;
+	background-position: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+h1, p {
+	color: white;
+	text-align: center;
+}
+
+/* Réinitialiser les marges et les rembourrages par défaut pour le corps de la page */
+body {
+	margin: 0;
+	padding: 0;
+}
+
+</head>
+<body>
+	<div class="background-image"></div>
+	<h1>Titre de la page</h1>
+	<p>Contenu de la page</p>
+</body>
+</html>
